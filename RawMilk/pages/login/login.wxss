@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+page{
+  background: url("http://192.168.253.8:3000/images/bg.jpg") no-repeat;  
+  width:100%;  
+  height:100%;  
+  background-size:100% 100%;  
+  position:absolute;  
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg-login.png',sizingMethod='scale');
+}
+.shuruk {
+  padding: 15px 8px;
+  padding-left: 28px;
+  font-size: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: 微软雅黑;
+  color: #000;
+}
+.btn {
+  background-color: #bce2ed;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 微软雅黑;
+  line-height: 40px;
+  margin: 15px;
+}

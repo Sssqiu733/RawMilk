@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view style="padding-top:70%;">
+  <view style="margin-top:50px;"></view>
+  <input class="shuruk" placeholder="账号" bindinput="count" type="text" maxlength="20"/>
+  <input class="shuruk" placeholder="密码" bindinput="password" type="password" maxlength="16"/>
+  <button class="btn" formType="submit" bindtap='login'>登  录</button>
+</view>

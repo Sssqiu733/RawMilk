@@ -1,0 +1,13 @@
+<!--pages/adduser/adduser.wxml-->
+<view class="container" >
+<span style='font-size:20px; color:#bce2ed;'>员工信息</span>
+  <input class="shuruk" placeholder="姓名" bindinput="Name"/>
+  <input class="shuruk" placeholder="身份证号码" bindinput="IDCard" />
+  <input class="shuruk" placeholder="性别" bindinput="Sex"/>
+  <input class="shuruk" placeholder="邮箱" bindinput="Mailbox"/>
+  <input class="shuruk" placeholder="联系电话" bindinput="Phone"/>
+<span style='font-size:20px; color:#bce2ed;margin-top: 20px;'>登录信息</span>
+  <input class="shuruk" placeholder="登录账号" bindinput="Count"/>
+  <input class="shuruk" placeholder="登录密码" bindinput="Password"/>
+<button style="margin:80rpx;" class="btn" formType="submit" bindtap="add">保存</button>
+</view>

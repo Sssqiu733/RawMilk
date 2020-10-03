@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view wx:if="{{hasdata}}">
+  <view class="left-right">
+    <view>系统时间：{{time}}</view>
+    <view>牧场名称<picker bindchange="bindRanchChange" value="{{ranch_index}}" range="{{ranchlist}}"><view>{{ranchlist[ranch_index]}}</view></picker></view>
+    <view>奶罐编号<picker bindchange="bindTankChange" value="{{tank_index}}" range="{{tanklist}}"><view>{{tanklist[tank_index]}}</view></picker></view>
+  </view>   
+  <view class='titles'>
+    <view class='datatr'>
+      <span>阶段</span>
+      <span>时间</span>
+      <span>温度</span>
+      <span>报警</span>
+    </view>
+  </view>
+  <view class='databox'>
+  <view  class='datatr'>
+      <view wx:for="{{temp}}" wx:key="*this" wx:for-item="item">
+        <span>{{item.Milkstatus}}</span>
+        <span>{{item.Time}}</span>
+        <span>{{item.Temp}}</span>
+        <span class='r' wx:if="{{item.Alarm == 0}}"> </span>
+        <span class='r' wx:if="{{item.Alarm == 1}}">*</span>
+        <span class='r' wx:if="{{item.Alarm == 2}}">!</span>
+      </view>
+    </view>
+  </view>
+</view>
+<block wx:else><view style="text-align:center;width:100%;">暂无监控源</view></block>

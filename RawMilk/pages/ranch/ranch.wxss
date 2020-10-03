@@ -1,0 +1,36 @@
+/* pages/ranch/ranch.wxss */
+.table {
+  border: 1px solid #bdc3c7;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+  font-size: 12px;
+  margin: 0 auto;
+  top: 10px;
+  margin-bottom: 10px;
+  left: 1%;
+  position: absolute;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th, .td {
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+  text-align: center;
+  width: 100%;
+}
+.th {
+  font-weight: 400;
+  background-color: #bce2ed;
+  font-size: 10px;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  right: 0;
+}

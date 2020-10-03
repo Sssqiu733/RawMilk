@@ -1,0 +1,5 @@
+<!--pages/addranch/addranch.wxml-->
+<view style="margin-top:20px;">
+  <input class="shuruk" placeholder="牧场名称" bindinput="name" type="text" maxlength="30" />
+  <button class="btn" formType="submit" bindtap="addranch">添加</button>
+</view>

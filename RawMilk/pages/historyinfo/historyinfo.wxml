@@ -1,0 +1,24 @@
+<!--pages/historyinfo/historyinfo.wxml-->
+<view style="margin:10px;">
+  <view>已选择：{{info.Milkstatus}}　{{info.Date}}　</view> 
+  <view>牧场：{{info.RanchName}}　奶罐：{{info.MilktankID}}</view> 
+  <view>温度显示如下</view> 
+</view>
+<canvas canvas-id="lineCanvas1" disable-scroll="false" class="canvas" wx:if="{{hasdata}}"></canvas>
+<view class="table">
+  <view class="tr">
+    <view class="th">时间</view>
+    <view class="th">温度/°</view>
+    <view class="th">报警</view>
+  </view>
+  <view class="tr" wx:for="{{temp}}" wx:key="*this" wx:for-item="item">
+    <view class="td">{{item.Time}}</view>
+    <view class="td">{{item.Temp}}°</view>
+    <view class="td">
+      <span class='r' wx:if="{{item.Alarm == 0}}">安全</span>
+      <span class='r' wx:if="{{item.Alarm == 1}}">*</span>
+      <span class='r' wx:if="{{item.Alarm == 2}}">!</span>
+    </view>
+  </view>
+</view>
+

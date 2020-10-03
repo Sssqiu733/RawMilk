@@ -1,0 +1,59 @@
+/**index.wxss**/
+.toptext{
+  top: 10px;
+  position: absolute;
+  font-size: 12px；
+}
+.datatr{
+ width: 80%;
+ margin: 0 auto;
+ text-align: center;
+}
+.titles{
+  top: 40px; position: absolute; font-size:12px;
+  text-align:center; width: 100%;
+}
+.titles span{
+ width: 25%; text-align: center;  display:block; float: left;
+ line-height: 35px;height: 35px; 
+ border-bottom: 1px solid #999;
+}
+.databox{
+  top: 75px; position: absolute; font-size:12px;
+  text-align:center; width: 100%;
+  background-color:#333;
+  padding: 10px 0;
+  color: #fff;
+  max-height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.databox span{
+ width: 25%; text-align: center;  display:block; float: left; height: 35px; line-height: 35px;
+ border-bottom: 1px solid #999;
+}
+.databox span.r{
+  color:crimson;
+  font-weight: 600;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.left-right{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+}

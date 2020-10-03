@@ -1,0 +1,21 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{hasdata}}">
+  <view class="table">
+    <view class="tr">
+        <view class="th">姓名</view>
+        <view class="th">联系方式</view>
+        <view class="th">操作</view>
+    </view>
+    <view class="tr" wx:for="{{users}}" wx:key="*this" wx:for-item="item">
+        <view class="td">{{item.Name}}</view>
+        <view class="td">{{item.Phone}}</view>
+        <view class="td">
+          <image src="../../img/del.png" style="width:20px;height:20px;" bindtap="binddel" data-index="{{index}}"></image>
+        </view>
+    </view>
+  </view>
+</view>
+<block wx:else><view style="text-align:center;width:100%;">暂无员工</view></block>
+<view class="footer">
+  <image src="../../img/add.png" style="width:45px;height:45px;margin-right: 10px;" bindtap="adduser"></image>
+</view>

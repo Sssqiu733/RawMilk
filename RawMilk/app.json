@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/ranch/ranch",
+    "pages/addranch/addranch",
+    "pages/history/history",
+    "pages/historyinfo/historyinfo",
+    "pages/tongji/tongji",
+    "pages/tongjiinfo/tongjiinfo",
+    "pages/user/user",
+    "pages/adduser/adduser"
+  ],
+  "tabBar": {
+    "color": "#bdc3c7",
+    "selectedColor": "#bce2ed",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "实时监控",
+        "iconPath": "img/temp.png",
+        "selectedIconPath": "img/temp_press.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史记录",
+        "iconPath": "img/history.png",
+        "selectedIconPath": "img/history_press.png"
+      },
+      {
+        "pagePath": "pages/ranch/ranch",
+        "text": "牧场管理",
+        "iconPath": "img/ranch.png",
+        "selectedIconPath": "img/ranch_press.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "员工管理",
+        "iconPath": "img/user.png",
+        "selectedIconPath": "img/user_press.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#bce2ed",
+    "navigationBarTitleText": "生鲜乳温度监控系统",
+    "navigationBarTextStyle":"light"
+  }
+}

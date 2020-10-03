@@ -1,0 +1,18 @@
+<!--pages/ranch/ranch.wxml-->
+<view class="table">
+  <view class="tr">
+      <view class="th">牧场编号</view>
+      <view class="th">牧场名称</view>
+      <view class="th">操作</view>
+  </view>
+  <view class="tr" wx:for="{{ranchs}}" wx:key="*this" wx:for-item="item">
+      <view class="td">{{item.RanchID}}</view>
+      <view class="td">{{item.RanchName}}</view>
+      <view class="td">
+        <image src="../../img/del.png" style="width:20px;height:20px;" bindtap="binddel" data-index="{{index}}"></image>
+      </view>
+  </view>
+</view>
+<view class="footer">
+  <image src="../../img/add.png" style="width:45px;height:45px;margin-right: 10px;" bindtap="addranch"></image>
+</view>

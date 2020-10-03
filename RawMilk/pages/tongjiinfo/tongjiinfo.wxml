@@ -1,0 +1,24 @@
+<!--pages/tongjiinfo/tongjiinfo.wxml-->
+<view style="margin:10px;">
+  <view>已选择：{{info.Milkstatus}}</view>
+  <view>{{info.Date}}至{{info.Date_end}}　</view> 
+  <view>牧场：{{info.RanchName}}　奶罐：{{info.MilktankID}}</view> 
+  <view>温度显示如下</view> 
+</view>
+<canvas canvas-id="lineCanvas1" disable-scroll="false" class="canvas" wx:if="{{hasdata}}"></canvas>
+<view class="table">
+  <view class="tr">
+    <view class="th">日期</view>
+    <view class="th">平均温度</view>
+    <view class="th">最高温度</view>
+    <view class="th">最低温度</view>
+    <view class="th">报警次数</view>
+  </view>
+  <view class="tr" wx:for="{{tongji}}" wx:key="*this" wx:for-item="item">
+    <view class="td">{{item.date}}</view>
+    <view class="td">{{item.tempavg}}°</view>
+    <view class="td">{{item.tempmax}}°</view>
+    <view class="td">{{item.tempmin}}°</view>
+    <view class="td">{{item.alarmsum}}</view>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<!--pages/history/history.wxml-->
+<view  class='drow1'>
+  <view class='btxx'>选择阶段</view>
+  <view class="page_bd" style='width:220px;' >
+    <picker class="body_head" bindchange="bindPhaseChange" value="{{phase_index}}" range="{{phase}}">
+      <view>{{phase[phase_index]}}</view>
+    </picker> 
+  </view>
+</view>
+<view  class='drow2'>
+  <view class='btxx'>选择时间</view>
+  <view class="page_bd" style='width:50px;'>
+      <picker class="body_head" bindchange="bindYearChange" value="{{year_index}}" range="{{year}}">
+        <view>{{year[year_index]}}</view>
+      </picker> 
+    </view>
+  <view class='btxx' style='width:20px;'>年</view>
+  <view class="page_bd" style='width:40px;'>
+      <picker class="body_head" bindchange="bindMonthChange" value="{{month_index}}" range="{{month}}">
+        <view>{{month[month_index]}}</view>
+      </picker> 
+    </view>
+     <view class='btxx' style='width:20px;'>月</view>
+  <view class="page_bd" style='width:40px;'>
+      <picker class="body_head" bindchange="bindDayChange" value="{{day_index}}" range="{{day}}">
+        <view>{{day[day_index]}}</view>
+      </picker> 
+    </view>
+       <view class='btxx' style='width:20px;'>日</view>
+</view>
+<view class='drow3'>
+  <view class='btxx'>选择牧场</view>
+  <view class="page_bd"  style='width:220px;'>
+    <picker class="body_head" bindchange="bindRanchChange" value="{{ranch_index}}" range="{{ranchlist}}">
+      <view>{{ranchlist[ranch_index]}}</view>
+    </picker> 
+  </view>
+</view>
+<view  class='drow4'>
+  <view class='btxx'>选择奶罐</view>
+  <view class="page_bd" style='width:220px;'>
+    <picker class="body_head" bindchange="bindCannedChange" value="{{tank_index}}" range="{{tanklist}}">
+      <view>{{tanklist[tank_index]}}</view>
+    </picker> 
+  </view>
+</view>
+<button style="margin:40px auto;" class="btn" formType="submit" bindtap='jump1'>查询</button>
+<view class="footer">
+  <image src="../../img/tongji.png" style="width:45px;height:45px;margin-right: 10px;" bindtap="tongji"></image>
+</view>
+
+
